@@ -1,0 +1,24 @@
+<script>
+let date = new Date();
+let month = date.getMonth()+1;
+
+switch(month) {
+    case 3: case 4: case 5:
+        document.write("<h3><span style='color:blue'>지금은 " + month +"월 입니다.</span><br>")
+        document.write("계절은 <mark style=background-color:green;color:white;>봄(Spring)</mark> 입니다.")
+        break;
+
+    case 6: case 7: case 8:
+        document.write("<h3><span style='color:blue'>지금은 " + month +"월 입니다.</span><br>")
+        document.write("계절은 <mark style=background-color:green;color:white;>여름(Summer)</mark> 입니다.")
+        break;
+    case 9: case 10: case 11:
+        document.write("<h3><span style='color:blue'>지금은 " + month +"월 입니다.</span><br>")
+        document.write("계절은 <mark style=background-color:green;color:white;>가을(Fall)</mark> 입니다.")
+        break;
+    case 12: case 1: case 2:
+        document.write("<h3><span style='color:blue'>지금은 " + month +"월 입니다.</span><br>")
+        document.write("계절은 <mark style=background-color:green;color:white;>겨울(Winter)</mark> 입니다.")
+        break;
+}
+</script>
