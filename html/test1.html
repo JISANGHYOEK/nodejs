@@ -1,0 +1,13 @@
+<script>
+    let i=0, sum=0;
+
+    document.write("<table border=1>");
+    document.write("<caption><div style='font-size:20pt; color:blue;'>1-10 홀수/짝수 색깔 출력</div></caption>");
+
+    while(i<10){
+        i++;
+        sum +=i;
+        if(i%2==0)document.write("<td bgcolor=red align=center width=40><font style='font-size:20pt; color:white;'>" + i + "</font>");
+        else document.write("<td bgcolor=green align=center width=40><font style='font-size:20pt; color:white;'>" + i + "</font>");
+    }
+</script>

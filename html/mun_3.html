@@ -1,0 +1,14 @@
+<script>
+    let i=0, sum=0;
+
+    document.write("<table border=1>");//테이블 시작
+    document.write("<caption><div style='font-size:20pt; color:blue;'>1-10까지 출력</div></caption>");
+
+    while(i<10){
+        i++;
+        sum +=i;
+
+        document.write("<td bgcolor=cyan align=center width=40><font style='font-size:20pt; color:green;'>" + i + "</font>");
+    }
+    document.write("<tr><td colspan=10 bgcolor=red align=center><font style='font-size:20pt; color:white;'>합계:" + sum + "</font>");
+</script>
