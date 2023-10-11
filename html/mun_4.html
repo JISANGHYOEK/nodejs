@@ -1,0 +1,14 @@
+<script>
+    let num = Number(prompt("원하는 숫자:"));
+
+    let i=0, sum=0;
+
+    document.write("<table border=1 width=400 height=50>");//테이블 시작
+
+    while(i<num){
+        i++;
+        sum +=i;
+    }
+    document.write("<td bgcolor=blue align=center width=200><font style='font-size:20pt; color:white;'>1-"+ num+"까지 합계</font>");
+    document.write("<td colspan=10 bgcolor=red align=center width = 100><font style='font-size:20pt; color:white;'>" + sum + "</font>");
+</script>
