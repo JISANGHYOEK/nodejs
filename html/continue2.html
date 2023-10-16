@@ -1,0 +1,13 @@
+<script>
+    document.write(`<table border=1>`);
+    document.write(`<tr bgcolor=green, align=center><td colspan=5><font style='color:white; font-size:20pt;'>array 짝수 </font>`);
+    document.write(`<tr>`);
+    
+    let arr = [15,23,42,55,46,78,50,91,3,12];
+    
+    for(let i=0; i<=arr.length-1; i++) {
+        if(arr[i]%2==1) continue;
+        document.write(`<td><font style='color:blue; font-size:20pt;'>${arr[i]}</font>`);
+    }
+
+</script>
