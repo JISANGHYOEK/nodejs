@@ -1,0 +1,16 @@
+<script>
+    let myFucntion =(min,max,callback)=>{
+        let sum = 0;
+        for(let i=min; i<=max; i++){
+            document.write(`<span style='color:blue; font-size:20pt;'>${i} </span>`);            
+            sum+=i;
+            
+        }
+        callback(sum);
+    }
+
+    myFucntion(1,10,function(sum){
+        document.write(`<br><font style='font-size:20pt;'><mark style=background-color:green;color:white;size:20pt>1-10까지 합: ${sum}</mark></font>`);
+    });
+
+</script>
