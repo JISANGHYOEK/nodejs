@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .text-blue {
+        color: blue;
+        font-size: 15pt;
+      }
+      .green-text {
+        color: green;
+        font-size: 15pt;
+        font-style: italic;
+        text-decoration: underline double red;
+      }
+      .red-underline {
+        color: blue;
+        font-size: 15pt;
+        border: 2px solid red;
+        padding: 5px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      class Product {
+        constructor(name, price, quantity) {
+          this.name = name;
+          this.price = price;
+          this.quantity = quantity;
+        }
+
+        print() {
+          document.write(
+            `<div class="text-blue">${this.name} 가격은 <span class="green-text">${this.price}</span>원, 수량은 <span class="green-text">${
+              this.quantity
+            }</span>, 판매가격은 <span class="red-underline">${this.TotalPrice()}</span>원입니다.</div><br>`
+          );
+        }
+
+        TotalPrice() {
+          return this.price * this.quantity;
+        }
+      }
+
+      let products = [
+        new Product('새우깡', 3500, 15),
+        new Product('감자깡', 2800, 10),
+        new Product('몽쉘통통', 3000, 5),
+        new Product('꿀꽈배기', 2600, 10),
+      ];
+
+      for (let product of products) {
+        product.print();
+      }
+    </script>
+  </body>
+</html>
