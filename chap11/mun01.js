@@ -5,7 +5,7 @@ let chulsin=[{
 {
     name:"David Kim",
     region:"New York"
-}
+},
 {
     name:"송미자",
     region:"경기도"
