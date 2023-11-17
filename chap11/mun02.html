@@ -1,0 +1,18 @@
+<style>
+    #aaa{
+        color:blue;
+        font-size:20pt;
+        font-family:"굴림";
+    }
+</style>
+
+<script>
+let tv = '{"channel":"TvN", "name":"강호동", "title":"방송인","program":"올탁구나", "age":51, "sosok":"SM C&C"}';
+let obj = JSON.parse(tv);
+
+document.write(`<font id="aaa">국민 MC: ${obj.name} <br>`);
+document.write(`나이: ${obj.age} <br>`);
+document.write(`채널: ${obj.channel} <br>`);
+document.write(`프로그램: ${obj.program} <br>`);
+
+</script>
