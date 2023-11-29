@@ -1,13 +1,14 @@
 var express = require("express");
 const { clearCookie } = require("express/lib/response");
 
-var mysql = require('mysql');
+var mysql = require('mysql2');
 
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'hong',
     password: 'hong',
-    database: 'scott'
+    database: 'scott',
+    port: 3307,
 });
 
 var app = express();
